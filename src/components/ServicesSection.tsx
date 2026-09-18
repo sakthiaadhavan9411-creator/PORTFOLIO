@@ -81,7 +81,7 @@ export default function ServicesSection() {
                       service.imageLayout === 'featuredStack' && imageIndex === 1
                         ? 'w-[68%] self-center -mt-6 sm:-mt-10 md:-mt-16'
                         : service.imageLayout === 'single'
-                          ? 'aspect-[3/1] w-full object-cover'
+                          ? 'aspect-[2/1] w-full bg-[#070B10] object-contain'
                         : 'w-full'
                     }`}
                   />

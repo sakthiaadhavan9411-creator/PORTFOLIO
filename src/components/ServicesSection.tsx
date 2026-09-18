@@ -12,7 +12,9 @@ const SERVICES = [
   {
     number: '02',
     name: 'Business Development Associate — Quill Audits',
-    images: [],
+    images: [
+      { src: '/images/quill-audits.png', alt: 'A day at Quill Audits timeline' },
+    ],
   },
   {
     number: '03',
@@ -65,19 +67,17 @@ export default function ServicesSection() {
                   {service.name}
                 </h3>
               </div>
-              {service.images.length > 0 && (
-                <div className="mt-5 flex w-full flex-col gap-4 sm:mt-7">
-                  {service.images.map((image) => (
-                    <img
-                      key={image.src}
-                      src={image.src}
-                      alt={image.alt}
-                      loading="lazy"
-                      className="block w-full object-contain mix-blend-multiply"
-                    />
-                  ))}
-                </div>
-              )}
+              <div className="mt-5 flex w-full flex-col gap-4 sm:mt-7">
+                {service.images.map((image) => (
+                  <img
+                    key={image.src}
+                    src={image.src}
+                    alt={image.alt}
+                    loading="lazy"
+                    className="block w-full object-contain mix-blend-multiply"
+                  />
+                ))}
+              </div>
             </div>
           </FadeIn>
         ))}

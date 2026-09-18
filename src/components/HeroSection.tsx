@@ -4,8 +4,7 @@ import ContactButton from './ContactButton';
 
 const NAV_LINKS = ['About', 'Projects', 'Contact'];
 
-const PORTRAIT_URL =
-  'https://shrug-person-78902957.figma.site/_components/v2/d24c01ad3a56fc65e942a1f501eb73db42d7cf9a/Rectangle_40443.81459862.png';
+const PORTRAIT_URL = '/images/sakthi-hero-avatar.png';
 
 export default function HeroSection() {
   return (
@@ -46,8 +45,8 @@ export default function HeroSection() {
           <FadeIn delay={0.6} y={30}>
             <img
               src={PORTRAIT_URL}
-              alt="Jack, 3D creator portrait"
-              className="w-full h-auto select-none pointer-events-none"
+              alt="Sakthi illustrated portrait"
+              className="w-full h-auto select-none pointer-events-none mix-blend-lighten"
               draggable={false}
             />
           </FadeIn>

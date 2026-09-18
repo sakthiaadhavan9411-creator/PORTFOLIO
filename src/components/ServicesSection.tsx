@@ -44,7 +44,7 @@ export default function ServicesSection() {
         {SERVICES.map((service, i) => (
           <FadeIn key={service.number} delay={i * 0.1}>
             <div
-              className="flex items-start gap-6 sm:gap-10 py-8 sm:py-10 md:py-12"
+              className="flex items-baseline gap-6 py-8 sm:gap-10 sm:py-10 md:py-12"
               style={{
                 borderBottom:
                   i === SERVICES.length - 1

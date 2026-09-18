@@ -3,19 +3,19 @@ import FadeIn from './FadeIn';
 const SERVICES = [
   {
     number: '01',
-    name: '3D Modeling',
+    name: 'Automotive Parts Sourcer & Garage Owner',
     description:
       'Creation of detailed objects, characters, or environments tailored to specific client needs, ideal for games, products, and visualizations.',
   },
   {
     number: '02',
-    name: 'Rendering',
+    name: 'Business Development Associate — Quill Audits',
     description:
       'High-quality, photorealistic renders that showcase designs with custom lighting, textures, and materials to bring concepts to life.',
   },
   {
     number: '03',
-    name: 'Motion Design',
+    name: 'Business Development Intern — GTM Labs',
     description:
       'Dynamic animations and motion graphics that add energy and storytelling to brands, products, and digital experiences.',
   },

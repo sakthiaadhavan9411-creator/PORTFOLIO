@@ -39,7 +39,7 @@ export default function ProjectCard({
     >
       <motion.div
         style={{ scale }}
-        className="h-full w-full rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8 flex flex-col gap-4 sm:gap-6"
+        className="flex h-full w-full flex-col gap-4 overflow-hidden rounded-[40px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:gap-6 sm:rounded-[50px] sm:p-6 md:rounded-[60px] md:p-8"
       >
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-4 sm:gap-6">
@@ -61,29 +61,27 @@ export default function ProjectCard({
           <LiveProjectButton />
         </div>
 
-        <div className="flex flex-1 gap-3 sm:gap-4">
-          <div className="flex w-[40%] flex-col gap-3 sm:gap-4">
+        <div className="grid min-h-0 flex-1 grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-3 overflow-hidden sm:gap-4">
+          <div className="grid min-h-0 grid-rows-[minmax(0,2fr)_minmax(0,3fr)] gap-3 overflow-hidden sm:gap-4">
             <img
               src={project.col1Image1}
               alt=""
               loading="lazy"
-              className="w-full rounded-[40px] sm:rounded-[50px] md:rounded-[60px] object-cover"
-              style={{ height: 'clamp(130px, 16vw, 230px)' }}
+              className="h-full min-h-0 w-full rounded-[28px] object-cover sm:rounded-[40px] md:rounded-[50px]"
             />
             <img
               src={project.col1Image2}
               alt=""
               loading="lazy"
-              className="w-full flex-1 rounded-[40px] sm:rounded-[50px] md:rounded-[60px] object-cover"
-              style={{ height: 'clamp(160px, 22vw, 340px)' }}
+              className="h-full min-h-0 w-full rounded-[28px] object-cover sm:rounded-[40px] md:rounded-[50px]"
             />
           </div>
-          <div className="w-[60%]">
+          <div className="min-h-0 overflow-hidden">
             <img
               src={project.col2Image}
               alt=""
               loading="lazy"
-              className="h-full w-full rounded-[40px] sm:rounded-[50px] md:rounded-[60px] object-cover"
+              className="h-full min-h-0 w-full rounded-[28px] object-cover sm:rounded-[40px] md:rounded-[50px]"
             />
           </div>
         </div>

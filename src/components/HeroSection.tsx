@@ -1,6 +1,5 @@
 import FadeIn from './FadeIn';
 import Magnet from './Magnet';
-import ContactButton from './ContactButton';
 
 const NAV_LINKS = ['About', 'Projects', 'Contact'];
 
@@ -61,9 +60,6 @@ export default function HeroSection() {
               a 3d creator driven by crafting striking and unforgettable
               projects
             </p>
-          </FadeIn>
-          <FadeIn delay={0.5} y={20}>
-            <ContactButton />
           </FadeIn>
         </div>
       </div>

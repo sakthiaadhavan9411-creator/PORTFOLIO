@@ -11,7 +11,7 @@ const PROJECTS: ProjectData[] = [
   {
     number: '01',
     category: 'Client',
-    name: 'Nextlevel Studio',
+    name: 'Strategy & Product Work',
     col1Image1: cdnUrl(
       'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260412_055344_5eff02e0-87a5-41ce-b64f-eb08da8f33db.png',
     ),

@@ -5,11 +5,10 @@ const SERVICES = [
     number: '01',
     name: 'Automotive Parts Sourcer & Garage Owner',
     images: [
-      {
-        src: '/images/automotive-combined.png',
-        alt: 'PISTONS premium car parts sourcing and automotive revenue growth result',
-      },
+      { src: '/images/pistons-logo.png', alt: 'PISTONS premium car parts sourcing' },
+      { src: '/images/automotive-revenue.png', alt: 'Automotive revenue growth result' },
     ],
+    imageLayout: 'featuredStack',
   },
   {
     number: '02',
@@ -17,6 +16,7 @@ const SERVICES = [
     images: [
       { src: '/images/quill-audits.png', alt: 'A day at Quill Audits timeline' },
     ],
+    imageLayout: 'single',
   },
   {
     number: '03',
@@ -24,6 +24,7 @@ const SERVICES = [
     images: [
       { src: '/images/gtm-labs.png', alt: 'GTM Labs proof of work results' },
     ],
+    imageLayout: 'single',
   },
 ];
 
@@ -70,13 +71,17 @@ export default function ServicesSection() {
                 </h3>
               </div>
               <div className="mt-5 flex w-full flex-col gap-4 sm:mt-7">
-                {service.images.map((image) => (
+                {service.images.map((image, imageIndex) => (
                   <img
                     key={image.src}
                     src={image.src}
                     alt={image.alt}
                     loading="lazy"
-                    className="block w-full object-contain mix-blend-multiply"
+                    className={`block object-contain mix-blend-multiply ${
+                      service.imageLayout === 'featuredStack' && imageIndex === 1
+                        ? 'w-[68%] self-center'
+                        : 'w-full'
+                    }`}
                   />
                 ))}
               </div>

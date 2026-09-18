@@ -73,7 +73,7 @@ export default function ServicesSection() {
                       src={image.src}
                       alt={image.alt}
                       loading="lazy"
-                      className="w-full rounded-xl border border-black/10 object-contain shadow-sm"
+                      className="block w-full object-contain mix-blend-multiply"
                     />
                   ))}
                 </div>

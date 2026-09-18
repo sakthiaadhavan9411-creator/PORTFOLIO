@@ -4,7 +4,7 @@ import ContactButton from './ContactButton';
 
 const NAV_LINKS = ['About', 'Projects', 'Contact'];
 
-const PORTRAIT_URL = '/images/sakthi-hero-avatar-short-hair.png';
+const PORTRAIT_URL = '/images/sakthi-hero-avatar-short-hair-transparent.png';
 
 export default function HeroSection() {
   return (
@@ -46,7 +46,7 @@ export default function HeroSection() {
             <img
               src={PORTRAIT_URL}
               alt="Sakthi illustrated portrait"
-              className="w-full h-auto select-none pointer-events-none mix-blend-lighten"
+              className="w-full h-auto select-none pointer-events-none"
               draggable={false}
             />
           </FadeIn>

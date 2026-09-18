@@ -19,18 +19,6 @@ const SERVICES = [
     description:
       'Dynamic animations and motion graphics that add energy and storytelling to brands, products, and digital experiences.',
   },
-  {
-    number: '04',
-    name: 'Branding',
-    description:
-      'Crafting cohesive visual identities -- from logos to full brand systems -- that communicate a clear and memorable presence.',
-  },
-  {
-    number: '05',
-    name: 'Web Design',
-    description:
-      'Designing clean, modern, and conversion-focused websites with attention to layout, typography, and user experience.',
-  },
 ];
 
 export default function ServicesSection() {

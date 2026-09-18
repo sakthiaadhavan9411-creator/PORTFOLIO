@@ -30,7 +30,7 @@ export default function HeroSection() {
       <div className="relative flex-1 flex flex-col justify-between">
         <div className="overflow-hidden">
           <FadeIn delay={0.15} y={40}>
-            <h1 className="hero-heading mt-6 sm:mt-4 md:-mt-5 w-full whitespace-nowrap text-center text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw] font-black uppercase leading-none tracking-tight">
+            <h1 className="hero-heading mt-6 sm:mt-4 md:-mt-5 w-full whitespace-nowrap text-center text-[11vw] sm:text-[11.5vw] md:text-[12vw] lg:text-[12vw] font-black uppercase leading-none tracking-tight">
               Hi, i&apos;m sakthi
             </h1>
           </FadeIn>

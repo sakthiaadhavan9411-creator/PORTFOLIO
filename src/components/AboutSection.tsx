@@ -59,15 +59,6 @@ export default function AboutSection() {
 
       <div className="flex flex-col items-center gap-16 sm:gap-20 md:gap-24">
         <div className="flex flex-col items-center gap-10 sm:gap-14 md:gap-16">
-          <FadeIn delay={0} y={40}>
-            <h2
-              className="hero-heading text-center font-black uppercase leading-none tracking-tight"
-              style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
-            >
-              About me
-            </h2>
-          </FadeIn>
-
           <AnimatedText
             text="With more than five years of experience in design, i focus on branding, web design, and user experience, i truly enjoy working with businesses that aim to stand out and present their best image. Let's build something incredible together!"
             className="max-w-[560px] text-center font-medium leading-relaxed text-[#D7E2EA]"

@@ -6,18 +6,28 @@ const SERVICES = [
     name: 'Automotive Parts Sourcer & Garage Owner',
     description:
       'Creation of detailed objects, characters, or environments tailored to specific client needs, ideal for games, products, and visualizations.',
+    images: [
+      { src: '/images/pistons-logo.png', alt: 'PISTONS premium car parts sourcing' },
+      { src: '/images/automotive-revenue.png', alt: 'Automotive revenue growth result' },
+    ],
   },
   {
     number: '02',
     name: 'Business Development Associate — Quill Audits',
     description:
       'High-quality, photorealistic renders that showcase designs with custom lighting, textures, and materials to bring concepts to life.',
+    images: [
+      { src: '/images/quill-audits.png', alt: 'A day at Quill Audits timeline' },
+    ],
   },
   {
     number: '03',
     name: 'Business Development Intern — GTM Labs',
     description:
       'Dynamic animations and motion graphics that add energy and storytelling to brands, products, and digital experiences.',
+    images: [
+      { src: '/images/gtm-labs.png', alt: 'GTM Labs proof of work results' },
+    ],
   },
 ];
 
@@ -55,7 +65,7 @@ export default function ServicesSection() {
               >
                 {service.number}
               </span>
-              <div className="flex flex-col gap-3 sm:gap-4">
+              <div className="min-w-0 flex-1 flex flex-col gap-3 sm:gap-4">
                 <h3
                   className="font-medium uppercase text-[#0C0C0C]"
                   style={{ fontSize: 'clamp(1rem, 2.2vw, 2.1rem)' }}
@@ -71,6 +81,17 @@ export default function ServicesSection() {
                 >
                   {service.description}
                 </p>
+                <div className="mt-3 flex flex-col gap-4 sm:mt-5">
+                  {service.images.map((image) => (
+                    <img
+                      key={image.src}
+                      src={image.src}
+                      alt={image.alt}
+                      loading="lazy"
+                      className="w-full rounded-xl border border-black/10 object-contain shadow-sm"
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </FadeIn>

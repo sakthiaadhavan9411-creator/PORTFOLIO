@@ -4,8 +4,6 @@ const SERVICES = [
   {
     number: '01',
     name: 'Automotive Parts Sourcer & Garage Owner',
-    description:
-      'Creation of detailed objects, characters, or environments tailored to specific client needs, ideal for games, products, and visualizations.',
     images: [
       { src: '/images/pistons-logo.png', alt: 'PISTONS premium car parts sourcing' },
       { src: '/images/automotive-revenue.png', alt: 'Automotive revenue growth result' },
@@ -14,8 +12,6 @@ const SERVICES = [
   {
     number: '02',
     name: 'Business Development Associate — Quill Audits',
-    description:
-      'High-quality, photorealistic renders that showcase designs with custom lighting, textures, and materials to bring concepts to life.',
     images: [
       { src: '/images/quill-audits.png', alt: 'A day at Quill Audits timeline' },
     ],
@@ -23,8 +19,6 @@ const SERVICES = [
   {
     number: '03',
     name: 'Business Development Intern — GTM Labs',
-    description:
-      'Dynamic animations and motion graphics that add energy and storytelling to brands, products, and digital experiences.',
     images: [
       { src: '/images/gtm-labs.png', alt: 'GTM Labs proof of work results' },
     ],
@@ -72,15 +66,6 @@ export default function ServicesSection() {
                 >
                   {service.name}
                 </h3>
-                <p
-                  className="max-w-2xl font-light leading-relaxed text-[#0C0C0C]"
-                  style={{
-                    fontSize: 'clamp(0.85rem, 1.6vw, 1.25rem)',
-                    opacity: 0.6,
-                  }}
-                >
-                  {service.description}
-                </p>
                 <div className="mt-3 flex flex-col gap-4 sm:mt-5">
                   {service.images.map((image) => (
                     <img

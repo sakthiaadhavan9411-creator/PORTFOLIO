@@ -79,7 +79,7 @@ export default function ServicesSection() {
                     loading="lazy"
                     className={`block object-contain mix-blend-multiply ${
                       service.imageLayout === 'featuredStack' && imageIndex === 1
-                        ? 'w-[68%] self-center'
+                        ? 'w-[68%] self-center -mt-6 sm:-mt-10 md:-mt-16'
                         : 'w-full'
                     }`}
                   />

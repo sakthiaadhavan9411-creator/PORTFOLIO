@@ -80,6 +80,8 @@ export default function ServicesSection() {
                     className={`block object-contain mix-blend-multiply ${
                       service.imageLayout === 'featuredStack' && imageIndex === 1
                         ? 'w-[68%] self-center -mt-6 sm:-mt-10 md:-mt-16'
+                        : service.imageLayout === 'single'
+                          ? 'aspect-[3/1] w-full object-cover'
                         : 'w-full'
                     }`}
                   />

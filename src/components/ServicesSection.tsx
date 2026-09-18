@@ -44,7 +44,7 @@ export default function ServicesSection() {
         {SERVICES.map((service, i) => (
           <FadeIn key={service.number} delay={i * 0.1}>
             <div
-              className="flex items-baseline gap-6 py-8 sm:gap-10 sm:py-10 md:py-12"
+              className="flex flex-col py-8 sm:py-10 md:py-12"
               style={{
                 borderBottom:
                   i === SERVICES.length - 1
@@ -53,30 +53,30 @@ export default function ServicesSection() {
                 borderTop: i === 0 ? '1px solid rgba(12, 12, 12, 0.15)' : undefined,
               }}
             >
-              <span
-                className="shrink-0 font-black leading-none text-[#0C0C0C]"
-                style={{ fontSize: 'clamp(3rem, 10vw, 140px)' }}
-              >
-                {service.number}
-              </span>
-              <div className="min-w-0 flex-1 flex flex-col gap-3 sm:gap-4">
+              <div className="flex min-w-0 items-baseline gap-6 sm:gap-10">
+                <span
+                  className="shrink-0 font-black leading-none text-[#0C0C0C]"
+                  style={{ fontSize: 'clamp(3rem, 10vw, 140px)' }}
+                >
+                  {service.number}
+                </span>
                 <h3
                   className="font-medium uppercase text-[#0C0C0C]"
                   style={{ fontSize: 'clamp(1rem, 2.2vw, 2.1rem)' }}
                 >
                   {service.name}
                 </h3>
-                <div className="mt-3 flex flex-col gap-4 sm:mt-5">
-                  {service.images.map((image) => (
-                    <img
-                      key={image.src}
-                      src={image.src}
-                      alt={image.alt}
-                      loading="lazy"
-                      className="block w-full object-contain mix-blend-multiply"
-                    />
-                  ))}
-                </div>
+              </div>
+              <div className="mt-5 flex w-full flex-col gap-4 sm:mt-7">
+                {service.images.map((image) => (
+                  <img
+                    key={image.src}
+                    src={image.src}
+                    alt={image.alt}
+                    loading="lazy"
+                    className="block w-full object-contain mix-blend-multiply"
+                  />
+                ))}
               </div>
             </div>
           </FadeIn>

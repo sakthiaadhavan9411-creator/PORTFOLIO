@@ -5,8 +5,10 @@ const SERVICES = [
     number: '01',
     name: 'Automotive Parts Sourcer & Garage Owner',
     images: [
-      { src: '/images/pistons-logo.png', alt: 'PISTONS premium car parts sourcing' },
-      { src: '/images/automotive-revenue.png', alt: 'Automotive revenue growth result' },
+      {
+        src: '/images/automotive-combined.png',
+        alt: 'PISTONS premium car parts sourcing and automotive revenue growth result',
+      },
     ],
   },
   {

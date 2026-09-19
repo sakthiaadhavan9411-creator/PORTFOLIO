@@ -12,15 +12,9 @@ const PROJECTS: ProjectData[] = [
     number: '01',
     category: 'Client',
     name: 'Strategy & Product Work',
-    col1Image1: cdnUrl(
-      'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260412_055344_5eff02e0-87a5-41ce-b64f-eb08da8f33db.png',
-    ),
-    col1Image2: cdnUrl(
-      'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260412_055431_11d841fd-8b41-46a5-82e4-b04f2407a7d8.png',
-    ),
-    col2Image: cdnUrl(
-      'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260412_055451_e317bf2d-28d4-48cc-86b0-6f72f25b6327.png',
-    ),
+    col1Image1: '/images/strategy-feature-chart.png',
+    col1Image2: '/images/strategy-user-segments.png',
+    col2Image: '/images/strategy-personas.png',
   },
   {
     number: '02',

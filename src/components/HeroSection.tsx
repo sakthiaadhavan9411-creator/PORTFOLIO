@@ -57,7 +57,7 @@ export default function HeroSection() {
               className="max-w-[160px] sm:max-w-[220px] md:max-w-[260px] font-light uppercase tracking-wide leading-snug text-[#D7E2EA]"
               style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
             >
-              Impact built around creating value, opportunities and growth.
+              The greatest investment you can make is in yourself.
             </p>
           </FadeIn>
         </div>

@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 
 const ALL_GIFS = [
   '/images/quill-audits-letter.png',
+  '/images/pistons-workspace.png',
+  '/images/pistons-car.png',
+  '/images/pistons-suspension-parts.png',
   'https://motionsites.ai/assets/hero-codenest-preview-Cgppc2qV.gif',
   'https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif',
   'https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif',

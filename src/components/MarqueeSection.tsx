@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 const ALL_GIFS = [
-  'https://motionsites.ai/assets/hero-space-voyage-preview-eECLH3Yc.gif',
+  '/images/quill-audits-letter.png',
   'https://motionsites.ai/assets/hero-codenest-preview-Cgppc2qV.gif',
   'https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif',
   'https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif',
@@ -21,7 +21,7 @@ const ALL_GIFS = [
   'https://motionsites.ai/assets/hero-new-era-preview-CocuDUm9.gif',
   'https://motionsites.ai/assets/hero-wealth-preview-B70idl_u.gif',
   'https://motionsites.ai/assets/hero-luminex-preview-CxOP7ce6.gif',
-  'https://motionsites.ai/assets/hero-celestia-preview-0yO3jXO8.gif',
+  '/images/gtm-labs-experience-letter.png',
 ];
 
 const ROW_1 = ALL_GIFS.slice(0, 11);
@@ -56,7 +56,11 @@ function MarqueeRow({
             src={src}
             alt=""
             loading="lazy"
-            className="h-[270px] w-[420px] shrink-0 rounded-2xl object-cover"
+            className={`h-[270px] w-[420px] shrink-0 rounded-2xl ${
+              src.startsWith('/images/')
+                ? 'bg-white object-contain'
+                : 'object-cover'
+            }`}
           />
         ))}
       </div>

@@ -20,9 +20,9 @@ const PROJECTS: ProjectData[] = [
     number: '02',
     category: 'Personal',
     name: 'Digital Presence & Growth',
-    col1Image1: '/images/digital-growth-analytics.png',
+    col1Image1: '/images/digital-growth-tuition-banner.png',
     col1Image2: '/images/digital-growth-landing-page.png',
-    col2Image: '/images/digital-growth-tuition-poster.png',
+    col2Image: '/images/digital-growth-analytics.png',
     imageFit: 'contain',
   },
   {

@@ -1,12 +1,6 @@
 import FadeIn from './FadeIn';
 import ProjectCard, { type ProjectData } from './ProjectCard';
 
-function cdnUrl(url: string) {
-  return `https://images.higgs.ai/?default=1&output=webp&url=${encodeURIComponent(
-    url,
-  )}&w=1280&q=85`;
-}
-
 const PROJECTS: ProjectData[] = [
   {
     number: '01',
@@ -24,20 +18,6 @@ const PROJECTS: ProjectData[] = [
     col1Image2: '/images/digital-growth-landing-page.png',
     col2Image: '/images/digital-growth-analytics.png',
     imageFit: 'contain',
-  },
-  {
-    number: '03',
-    category: 'Client',
-    name: 'Solaris Digital',
-    col1Image1: cdnUrl(
-      'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260412_055759_963cfb0b-4bd1-4b0f-9d0a-09bd6cf95b2f.png',
-    ),
-    col1Image2: cdnUrl(
-      'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260412_060108_438f781a-9846-4dcc-89ab-c4e6cb830f5b.png',
-    ),
-    col2Image: cdnUrl(
-      'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260412_055818_9d062121-ad7e-46b9-999a-1a6a692ef1ee.png',
-    ),
   },
 ];
 

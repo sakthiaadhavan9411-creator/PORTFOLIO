@@ -15,7 +15,7 @@ const ALL_GIFS = [
   '/images/gtm-logo.png',
   'https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif',
   '/images/coding-logo.png',
-  'https://motionsites.ai/assets/hero-stellar-ai-preview-D3HL6bw1.gif',
+  '/images/gtm-labs-experience-letter.png',
   'https://motionsites.ai/assets/hero-xportfolio-preview-D4A8maiC.gif',
   'https://motionsites.ai/assets/hero-orbit-web3-preview-BXt4OttD.gif',
   'https://motionsites.ai/assets/hero-nexora-preview-cx5HmUgo.gif',
@@ -24,7 +24,7 @@ const ALL_GIFS = [
   'https://motionsites.ai/assets/hero-new-era-preview-CocuDUm9.gif',
   'https://motionsites.ai/assets/hero-wealth-preview-B70idl_u.gif',
   'https://motionsites.ai/assets/hero-luminex-preview-CxOP7ce6.gif',
-  '/images/gtm-labs-experience-letter.png',
+  'https://motionsites.ai/assets/hero-stellar-ai-preview-D3HL6bw1.gif',
 ];
 
 const ROW_1 = ALL_GIFS.slice(0, 11);

@@ -9,6 +9,7 @@ export interface ProjectData {
   col1Image1: string;
   col1Image2: string;
   col2Image: string;
+  imageFit?: 'cover' | 'contain';
 }
 
 interface ProjectCardProps {
@@ -30,6 +31,8 @@ export default function ProjectCard({
 
   const targetScale = 1 - (totalCards - 1 - index) * 0.03;
   const scale = useTransform(scrollYProgress, [0, 1], [1, targetScale]);
+  const imageFitClass =
+    project.imageFit === 'contain' ? 'object-contain' : 'object-cover';
 
   return (
     <div
@@ -67,13 +70,13 @@ export default function ProjectCard({
               src={project.col1Image1}
               alt=""
               loading="lazy"
-              className="h-full min-h-0 w-full rounded-[28px] object-cover sm:rounded-[40px] md:rounded-[50px]"
+              className={`h-full min-h-0 w-full rounded-[28px] ${imageFitClass} sm:rounded-[40px] md:rounded-[50px]`}
             />
             <img
               src={project.col1Image2}
               alt=""
               loading="lazy"
-              className="h-full min-h-0 w-full rounded-[28px] object-cover sm:rounded-[40px] md:rounded-[50px]"
+              className={`h-full min-h-0 w-full rounded-[28px] ${imageFitClass} sm:rounded-[40px] md:rounded-[50px]`}
             />
           </div>
           <div className="min-h-0 overflow-hidden">
@@ -81,7 +84,7 @@ export default function ProjectCard({
               src={project.col2Image}
               alt=""
               loading="lazy"
-              className="h-full min-h-0 w-full rounded-[28px] object-cover sm:rounded-[40px] md:rounded-[50px]"
+              className={`h-full min-h-0 w-full rounded-[28px] ${imageFitClass} sm:rounded-[40px] md:rounded-[50px]`}
             />
           </div>
         </div>

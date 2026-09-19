@@ -19,16 +19,11 @@ const PROJECTS: ProjectData[] = [
   {
     number: '02',
     category: 'Personal',
-    name: 'Aura Brand Identity',
-    col1Image1: cdnUrl(
-      'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260412_055654_911201c5-36d9-4bc6-bac7-331adfce159f.png',
-    ),
-    col1Image2: cdnUrl(
-      'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260412_055723_5ceda0b8-d9c2-4665-b2e3-83ba19ba76d1.png',
-    ),
-    col2Image: cdnUrl(
-      'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260412_055753_adc5dcbd-a8e6-49c0-b43a-9b030d835cea.png',
-    ),
+    name: 'Digital Presence & Growth',
+    col1Image1: '/images/digital-growth-analytics.png',
+    col1Image2: '/images/digital-growth-landing-page.png',
+    col2Image: '/images/digital-growth-tuition-poster.png',
+    imageFit: 'contain',
   },
   {
     number: '03',

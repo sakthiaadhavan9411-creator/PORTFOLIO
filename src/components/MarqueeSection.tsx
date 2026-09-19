@@ -59,11 +59,7 @@ function MarqueeRow({
             src={src}
             alt=""
             loading="lazy"
-            className={`h-[270px] w-[420px] shrink-0 rounded-2xl ${
-              src.startsWith('/images/')
-                ? 'bg-white object-contain'
-                : 'object-cover'
-            }`}
+            className="h-[270px] w-[420px] shrink-0 rounded-2xl object-cover"
           />
         ))}
       </div>

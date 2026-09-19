@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 const ALL_GIFS = [
   '/images/quill-audits-letter.png',
   '/images/pistons-car.png',
-  '/images/pistons-workspace.png',
+  'https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif',
   '/images/pistons-suspension-parts.png',
   'https://motionsites.ai/assets/hero-codenest-preview-Cgppc2qV.gif',
   'https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif',
@@ -13,7 +13,7 @@ const ALL_GIFS = [
   'https://motionsites.ai/assets/hero-vitara-preview-Cjz2QYyU.gif',
   'https://motionsites.ai/assets/hero-terra-preview-BFjrCr7T.gif',
   '/images/gtm-logo.png',
-  'https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif',
+  '/images/pistons-workspace.png',
   '/images/coding-logo.png',
   '/images/gtm-labs-experience-letter.png',
   'https://motionsites.ai/assets/hero-xportfolio-preview-D4A8maiC.gif',

@@ -9,6 +9,8 @@ const PROJECTS: ProjectData[] = [
     col1Image1: '/images/strategy-feature-chart.png',
     col1Image2: '/images/strategy-user-segments.png',
     col2Image: '/images/strategy-personas.png',
+    liveProjectUrl:
+      'https://drive.google.com/drive/u/0/folders/1vIvSoOVxBpNoAoLveG4XTT8iAitgY0ak',
   },
   {
     number: '02',

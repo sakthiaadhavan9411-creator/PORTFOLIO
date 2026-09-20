@@ -1,7 +1,15 @@
 import FadeIn from './FadeIn';
 import Magnet from './Magnet';
 
-const NAV_LINKS = ['About', 'Projects', 'Contact'];
+const NAV_LINKS = [
+  { label: 'About', href: '#about' },
+  { label: 'Projects', href: '#projects' },
+  {
+    label: 'Contact',
+    href: 'https://www.linkedin.com/in/sakthi-aadhavan-3023b2313/',
+    external: true,
+  },
+];
 
 const PORTRAIT_URL = '/images/sakthi-hero-avatar-short-hair-transparent.png';
 
@@ -15,11 +23,13 @@ export default function HeroSection() {
         <div className="flex items-center justify-between px-6 md:px-10 pt-6 md:pt-8">
           {NAV_LINKS.map((link) => (
             <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+              key={link.label}
+              href={link.href}
+              target={link.external ? '_blank' : undefined}
+              rel={link.external ? 'noreferrer' : undefined}
               className="text-sm md:text-lg lg:text-[1.4rem] font-medium uppercase tracking-wider text-[#D7E2EA] transition-opacity duration-200 hover:opacity-70"
             >
-              {link}
+              {link.label}
             </a>
           ))}
         </div>

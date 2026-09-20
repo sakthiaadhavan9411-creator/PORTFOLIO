@@ -54,17 +54,23 @@ function MarqueeRow({
         }}
       >
         {tiles.map((src, i) => (
-          <img
+          <div
             key={`${src}-${i}`}
-            src={src}
-            alt=""
-            loading="lazy"
-            className={`h-[270px] w-[420px] shrink-0 rounded-2xl ${
-              src === '/images/pistons-mark-square.png'
-                ? 'bg-black object-contain'
-                : 'object-cover'
-            }`}
-          />
+            className="h-[270px] w-[420px] shrink-0 overflow-hidden rounded-2xl bg-black"
+          >
+            <img
+              src={src}
+              alt=""
+              loading="lazy"
+              className={`h-full w-full ${
+                src === '/images/pistons-mark-square.png'
+                  ? 'object-contain'
+                  : src === '/images/quill-audits-letter.png'
+                    ? 'scale-125 object-cover object-left'
+                    : 'object-cover'
+              }`}
+            />
+          </div>
         ))}
       </div>
     </div>

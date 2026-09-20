@@ -59,7 +59,11 @@ function MarqueeRow({
             src={src}
             alt=""
             loading="lazy"
-            className="h-[270px] w-[420px] shrink-0 rounded-2xl object-cover"
+            className={`h-[270px] w-[420px] shrink-0 rounded-2xl ${
+              src === '/images/pistons-mark-square.png'
+                ? 'bg-black object-contain'
+                : 'object-cover'
+            }`}
           />
         ))}
       </div>

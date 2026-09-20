@@ -5,7 +5,7 @@ const NAV_LINKS = [
   { label: 'About', href: '#about' },
   { label: 'Projects', href: '#projects' },
   {
-    label: 'Contact',
+    label: "Let's Connect",
     href: 'https://www.linkedin.com/in/sakthi-aadhavan-3023b2313/',
     external: true,
   },

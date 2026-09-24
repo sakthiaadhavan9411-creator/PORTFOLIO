@@ -59,7 +59,7 @@ export default function AboutSection() {
       <div className="flex flex-col items-center gap-16 sm:gap-20 md:gap-24">
         <div className="flex flex-col items-center gap-10 sm:gap-14 md:gap-16">
           <AnimatedText
-            text="First Class CS degree on paper. Everything else, I learned in growth and BD roles."
+            text="First-class CS degree on paper. My resume tells a different story - growth, BD, and shipping traction."
             className="max-w-[560px] text-center font-medium leading-relaxed text-[#D7E2EA]"
             style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)' }}
           />

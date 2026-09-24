@@ -39,7 +39,7 @@ export default function ServicesSection() {
           className="mb-16 sm:mb-20 md:mb-28 text-center font-black uppercase leading-none text-[#0C0C0C]"
           style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
         >
-          Services
+          Work
         </h2>
       </FadeIn>
 

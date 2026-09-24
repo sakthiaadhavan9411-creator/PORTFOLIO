@@ -41,19 +41,33 @@ export default function AnimatedText({ text, className, style }: AnimatedTextPro
     offset: ['start 0.8', 'end 0.2'],
   });
 
-  const characters = Array.from(text);
+  const words = text.split(/\s+/);
+  const totalCharacters = Array.from(words.join('')).length;
 
   return (
-    <p ref={ref} className={className} style={style}>
-      {characters.map((char, i) => (
-        <Character
-          key={i}
-          char={char}
-          index={i}
-          total={characters.length}
-          progress={scrollYProgress}
-        />
-      ))}
+    <p ref={ref} className={className} style={style} aria-label={text}>
+      <span aria-hidden="true">
+        {words.map((word, wordIndex) => {
+          const precedingCharacterCount = words
+            .slice(0, wordIndex)
+            .reduce((count, precedingWord) => count + Array.from(precedingWord).length, 0);
+
+          return (
+            <span key={`${word}-${wordIndex}`} className="inline-block whitespace-nowrap">
+              {Array.from(word).map((char, charIndex) => (
+                <Character
+                  key={`${char}-${charIndex}`}
+                  char={char}
+                  index={precedingCharacterCount + charIndex}
+                  total={totalCharacters}
+                  progress={scrollYProgress}
+                />
+              ))}
+              {wordIndex < words.length - 1 ? ' ' : null}
+            </span>
+          );
+        })}
+      </span>
     </p>
   );
 }

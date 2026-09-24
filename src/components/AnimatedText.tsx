@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { Fragment, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 interface AnimatedTextProps {
@@ -53,18 +53,20 @@ export default function AnimatedText({ text, className, style }: AnimatedTextPro
             .reduce((count, precedingWord) => count + Array.from(precedingWord).length, 0);
 
           return (
-            <span key={`${word}-${wordIndex}`} className="inline-block whitespace-nowrap">
-              {Array.from(word).map((char, charIndex) => (
-                <Character
-                  key={`${char}-${charIndex}`}
-                  char={char}
-                  index={precedingCharacterCount + charIndex}
-                  total={totalCharacters}
-                  progress={scrollYProgress}
-                />
-              ))}
+            <Fragment key={`${word}-${wordIndex}`}>
+              <span className="inline-block whitespace-nowrap">
+                {Array.from(word).map((char, charIndex) => (
+                  <Character
+                    key={`${char}-${charIndex}`}
+                    char={char}
+                    index={precedingCharacterCount + charIndex}
+                    total={totalCharacters}
+                    progress={scrollYProgress}
+                  />
+                ))}
+              </span>
               {wordIndex < words.length - 1 ? ' ' : null}
-            </span>
+            </Fragment>
           );
         })}
       </span>

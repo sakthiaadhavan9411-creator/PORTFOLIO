@@ -62,7 +62,9 @@ export default function ProjectCard({
               </span>
             </div>
           </div>
-          <LiveProjectButton href={project.liveProjectUrl} />
+          {project.liveProjectUrl ? (
+            <LiveProjectButton href={project.liveProjectUrl} />
+          ) : null}
         </div>
 
         <div className="grid min-h-0 flex-1 grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-3 overflow-hidden sm:gap-4">
